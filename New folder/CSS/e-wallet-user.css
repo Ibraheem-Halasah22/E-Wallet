@@ -1,0 +1,245 @@
+
+.pic{
+    display: inline-block;
+    padding: 3px;
+    background: linear-gradient(130deg, #74b9ff, #e66767);
+    margin: auto;
+    border-radius: 50%;
+    animation: animated-gradient 2s linear infinite;
+}
+.coool{
+    position: absolute;
+    top: 260px;
+    left: 610px;
+    font-size: large;
+    font-weight: 600;
+    font-family:"Segoe UI" ;
+}
+.whatdoyou{
+    position: absolute;
+    top: 480px;
+    left: 610px;
+
+
+}
+.cool{
+    width: 300px;
+    top: 250px;
+    left: 600px;
+    position: absolute;
+    z-index: -1;
+}
+
+@keyframes animated-gradient{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.pic img{
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.name{
+
+    float: left;
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 60;
+    margin: 20px 10px;
+}
+.logout{
+    width: 80px;
+    margin: 20px 10px;
+    float: right;
+    border-radius: 50%;
+    background: white;
+    border: transparent;
+    transition: .3s;
+}
+.logout:active {
+    background-color: yellow;
+}
+.logout :hover{
+    font-weight: 20;
+    background: white;
+    color: red;
+    font-size: 20px;
+}
+.beg{
+    width: 100%;
+    height: 600px;
+}
+
+.lefttri2{
+    background-image: url("../imgaes/redblue.jpg");
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    background-position-x: -50px;
+
+    left: -30px;
+    overflow: no-display;
+    top: 900px;
+    width: 1600px;
+    height: 800px;
+
+
+    position: absolute;
+
+    z-index: -1;
+
+}
+.lefttri3{
+    position: absolute;
+    top:0px;
+    border-bottom: 1000px solid white;
+    border-left: 1700px solid transparent;
+
+    z-index: -2;
+}
+.column{
+    padding-top: -6%;
+    float: left;
+    padding-left: 3%;
+    font-family: "Agency FB";
+    color: black;
+
+}
+body {
+    overflow-x: hidden;
+    background: url("../imgaes/background_gx.jpg");
+    background-size:cover;
+
+
+    height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header12 {
+    overflow: hidden;
+    background-color: transparent;
+
+    border-bottom:1px forestgreen solid ;
+
+
+}
+#icon{
+    margin-left: 40px;
+    position: relative;
+    float:left;
+    width: 70px;
+}
+.notshown{
+
+    display: none;
+}
+.shown{
+
+    position: fixed;
+    display: block;
+}
+.header12 a {
+    float: left;
+    color: white;
+    font-family: "Gill Sans MT";
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+.soso5{
+    text-align: left;
+    font-size: 30px;
+    font-family:Gabriola;
+    padding-left: 6%;
+    padding-top: 7%;
+    width: 100%;
+    float: left;
+}
+.soso5 p{
+    font-size: 17px;
+    padding-left: 2%;
+    padding-top: 10%;
+    color: white;
+}
+.header12 a.logo {
+    font-size: 25px;
+    font-weight: bold;
+
+
+}
+
+/* Change the background color on mouse-over */
+.header12{
+    color: white;
+}
+.header12 a:hover {
+    opacity: .6;
+    transition: .6s;
+}
+
+/* Style the active/current link*/
+.header12 a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+    padding-right:30px ;
+    margin-right:40px ;
+    float: right;
+    color: white;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+    .header12 a {
+
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+}
+.hidden{
+    display: none;
+}
+.fullscreen_cont{
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+
+}

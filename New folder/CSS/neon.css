@@ -1,0 +1,189 @@
+:root{
+    --neon: hsl(200,100%,50%);
+    --neon2: hsl(10,100%,50%);
+    --bg: hsl(240,10%,1%);
+}
+
+
+.neondiv{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.neon, .neon2{
+    position: relative;
+
+    font-size: 25px;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    transition: 100ms;
+    overflow: hidden;
+}
+.neon{
+    color: var(--neon);
+    text-shadow: 0 0 0.1em var(--neon), 0 0 0.5em var(--neon), 0 0 1em var(--neon);
+}
+.neon2{
+    color: var(--neon2);
+    text-shadow: 0 0 0.1em var(--neon2), 0 0 0.5em var(--neon2), 0 0 1em var(--neon2);
+}
+
+.neon:hover, .neon:focus{
+    color: white;
+    background: var(--neon);
+    box-shadow: 0 0 0.1em var(--neon), 0 0 0.5em var(--neon), 0 0 1.5em var(--neon), 0 0 3em var(--neon);
+    transition: 100ms;
+    transition-delay: 550ms;
+}
+.neon2:hover, .neon2:focus{
+    color: var(--bg);
+    background: var(--neon2);
+    box-shadow: 0 0 0.2em var(--neon2), 0 0 0.5em var(--neon2), 0 0 1em var(--neon2), 0 0 2.5em var(--neon2);
+    transition: 100ms;
+}
+.neon span,.neon2 span{
+    position: absolute;
+    display: block;
+}
+.neon span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--neon));
+}
+.neon:hover span:nth-child(1), .neon:focus span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+.neon span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 0.03em;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--neon));
+}
+.neon:hover span:nth-child(2), .neon:focus span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+}
+
+.neon span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 0.03em;
+    background: linear-gradient(270deg, transparent, var(--neon));
+}
+.neon:hover span:nth-child(3), .neon:focus span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+}
+
+.neon span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 0.03em;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--neon));
+}
+.neon:hover span:nth-child(4), .neon:focus span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+}
+.neon2 span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 0.03em;
+    background: linear-gradient(90deg, transparent, var(--neon2));
+    animation: snake 1s linear infinite;
+}
+@keyframes snake{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+.neon2 span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 0.03em;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--neon2));
+    animation: snake1 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes snake1{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+.neon2 span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 0.03em;
+    background: linear-gradient(270deg, transparent, var(--neon2));
+    animation: snake2 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes snake2{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+.neon2 span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 0.03em;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--neon2));
+    animation: snake3 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes snake3{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+.b1{
+    position: absolute;
+    top:250px;
+    left:250px;
+}
+.b2{
+    position: absolute;
+    top:250px;
+    left:1000px;
+}
+.b4{
+    position: absolute;
+    top:500px;
+    left:1000px;
+}
+.b3{
+    position: absolute;
+    top:500px;
+    left:250px;
+}
+
