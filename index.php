@@ -35,7 +35,7 @@ session_start();
             <?php
 
             $v = isset($_SESSION['logInId'])?"Let's go!":"Sign In";
-            $inOut = '<form action="firstredir.php" method="post"><button class="mySbutton" onclick="e_wallet_main()"><span></span>'.$v.'</button></form>';
+            $inOut = '<form action="firstredir.php" method="post"><button class="mySbutton" onclick="e_wallet_main()"><span></span>' .$v.'</button></form>';
             echo $inOut;
 
             ?>

@@ -7,7 +7,7 @@ class BlockedUserCard
 
 
     function show(){
-        echo'<form method="post" action="adminlogedin.php"><tr> <td><h4>'.$this->userName .
+        echo '<form method="post" action="adminlogedin.php"><tr> <td><h4>' .$this->userName .
             '<input type="hidden" name = "blockuserid" value="'.$this->userId.'">'.
             '<input type="hidden" name = "typeofunblock" value="user">'.
             '<br> </h4></td><td><button'.

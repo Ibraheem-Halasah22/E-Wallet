@@ -87,7 +87,7 @@ class NonPaidBillForUser{
 
     function show()
     {
-        echo '<tr><form method="post" action="useindex.php">'.
+        echo '<tr><form method="post" action="useindex.php">' .
             '<input type="hidden" value="'.$this->idForBill.'" '.
             'name ="billToPayFromUser"><td>'.$this->companyName.'</td><td>'.$this->amount.'</td><td>'.$this->service.'</td>'.
         '<td><button class="button2" type="submit">pay</button></td></form></tr>';
